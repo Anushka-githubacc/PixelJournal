@@ -1,0 +1,110 @@
+.pj-trend {
+  padding-block: var(--pj-space-xl);
+}
+
+.pj-trend__head {
+  display: flex;
+  align-items: center;
+  gap: var(--pj-space-sm);
+  margin-bottom: var(--pj-space-md);
+}
+
+.pj-trend__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #ffe8d9, #ffd6e8);
+  border: 1px solid var(--pj-border);
+  color: var(--pj-ink);
+}
+
+.pj-trend__title {
+  margin: 0;
+  font-family: var(--pj-font-display);
+  font-size: var(--pj-text-xl);
+  letter-spacing: -0.02em;
+  color: var(--pj-ink);
+}
+
+.pj-trend__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--pj-space-sm);
+}
+
+@media (min-width: 800px) {
+  .pj-trend__list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.pj-trend__link {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: var(--pj-space-md);
+  align-items: center;
+  padding: var(--pj-space-md);
+  border-radius: var(--pj-radius-md);
+  border: 1px solid var(--pj-border);
+  background: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  color: inherit;
+  transition:
+    transform 0.35s var(--pj-ease-out),
+    box-shadow 0.35s var(--pj-ease-out);
+}
+
+.pj-trend__thumb {
+  width: 72px;
+  height: 56px;
+  border-radius: var(--pj-radius-sm);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.pj-trend__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pj-trend__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.pj-trend__link:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--pj-shadow-soft);
+}
+
+.pj-trend__reads {
+  font-size: var(--pj-text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 750;
+  color: var(--pj-ink-muted);
+}
+
+.pj-trend__post-title {
+  font-family: var(--pj-font-display);
+  font-size: var(--pj-text-lg);
+  letter-spacing: -0.02em;
+  color: var(--pj-ink);
+}
+
+.pj-trend__meta {
+  font-size: var(--pj-text-xs);
+  color: var(--pj-ink-soft);
+}
+
+.pj-trend__dot {
+  margin-inline: 0.25rem;
+}

@@ -1,0 +1,129 @@
+
+.pj-spotlight {
+  padding-block: var(--pj-space-xl);
+  background: #ffedd5; /* warm coral/cream */
+  position: relative;
+  overflow: visible;
+  border-bottom: 6px solid #4f46e5; /* deep indigo accent */
+}
+
+
+/* Removed glowing blobs for a cleaner, more editorial look */
+
+.pj-spotlight__header {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: var(--pj-space-md);
+  margin-bottom: var(--pj-space-xl);
+}
+
+@media (min-width: 720px) {
+  .pj-spotlight__header {
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+
+.pj-spotlight__badge {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffd700;
+  border: none;
+  color: #4f46e5;
+  font-weight: 700;
+}
+
+.pj-spotlight__title {
+  margin: 0 0 var(--pj-space-sm);
+  font-family: var(--pj-font-display);
+  font-size: var(--pj-text-display);
+  letter-spacing: -0.03em;
+  color: #1f1f1f;
+}
+
+.pj-spotlight__lede {
+  margin: 0;
+  max-width: 36rem;
+  color: #5f5f5f;
+}
+
+.pj-spotlight__rail {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: var(--pj-space-lg);
+}
+
+@media (min-width: 900px) {
+  .pj-spotlight__rail {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+  }
+}
+
+
+.pj-spotlight__card {
+  margin: 0;
+  padding: var(--pj-space-lg);
+  border-radius: 24px;
+  border: 2px solid #ffd700;
+  background: #fff;
+  box-shadow: 0 4px 18px rgba(79,70,229,0.10);
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Removed card glow for clarity */
+
+.pj-spotlight__avatar {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  border-radius: 24px;
+  margin-bottom: var(--pj-space-md);
+  overflow: hidden;
+}
+
+.pj-spotlight__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.pj-spotlight__card:hover .pj-spotlight__avatar img {
+  transform: scale(1.05);
+}
+
+
+.pj-spotlight__name {
+  margin: 0 0 0.15rem;
+  font-family: var(--pj-font-display);
+  font-size: var(--pj-text-xl);
+  letter-spacing: -0.02em;
+  color: #4f46e5;
+}
+
+
+.pj-spotlight__role {
+  margin: 0 0 var(--pj-space-sm);
+  font-size: var(--pj-text-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffd700;
+}
+
+
+.pj-spotlight__bio {
+  margin: 0;
+  font-size: var(--pj-text-sm);
+  color: #5f5f5f;
+}

@@ -1,0 +1,25 @@
+.pj-blog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.pj-blog-actions__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--pj-border);
+  background: rgba(255, 255, 255, 0.85);
+  font-size: var(--pj-text-sm);
+  font-weight: 650;
+  color: var(--pj-ink-soft);
+  cursor: pointer;
+}
+
+.pj-blog-actions__btn--on {
+  border-color: rgba(42, 38, 34, 0.18);
+  background: linear-gradient(130deg, rgba(255, 236, 224, 0.9), rgba(255, 214, 232, 0.55));
+  color: var(--pj-ink);
+}

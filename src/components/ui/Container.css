@@ -1,0 +1,8 @@
+.pj-container {
+  width: min(100% - var(--pj-space-lg) * 2, var(--pj-max));
+  margin-inline: auto;
+}
+
+.pj-container--narrow {
+  max-width: 42rem;
+}

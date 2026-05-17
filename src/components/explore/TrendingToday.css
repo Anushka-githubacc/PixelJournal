@@ -1,0 +1,99 @@
+.pj-x-hot {
+  margin-bottom: var(--pj-space-3xl);
+}
+
+.pj-x-hot__head {
+  display: flex;
+  gap: var(--pj-space-md);
+  align-items: flex-start;
+  margin-bottom: var(--pj-space-lg);
+}
+
+.pj-x-hot__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 16px;
+  border: 1px solid var(--pj-border);
+  background: linear-gradient(145deg, #ffe8d9, #ffd6e8);
+  color: var(--pj-ink);
+}
+
+.pj-x-hot__title {
+  margin: 0 0 0.25rem;
+  font-family: var(--pj-font-display);
+  font-size: var(--pj-text-xl);
+  letter-spacing: -0.02em;
+  color: var(--pj-ink);
+}
+
+.pj-x-hot__sub {
+  margin: 0;
+  font-size: var(--pj-text-sm);
+  color: var(--pj-ink-muted);
+}
+
+.pj-x-hot__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-radius: var(--pj-radius-lg);
+  border: 1px solid var(--pj-border);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.pj-x-hot__row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: var(--pj-space-md);
+  align-items: stretch;
+  padding: var(--pj-space-md) var(--pj-space-lg);
+  border-bottom: 1px solid var(--pj-border);
+}
+
+.pj-x-hot__row:last-child {
+  border-bottom: none;
+}
+
+.pj-x-hot__rank {
+  font-family: ui-monospace, monospace;
+  font-size: var(--pj-text-lg);
+  font-weight: 700;
+  color: var(--pj-ink-muted);
+  align-self: center;
+}
+
+.pj-x-hot__link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.35rem 0;
+  border-left: 3px solid var(--pj-hot);
+  padding-left: var(--pj-space-md);
+}
+
+.pj-x-hot__link-title {
+  font-family: var(--pj-font-display);
+  font-size: var(--pj-text-lg);
+  letter-spacing: -0.02em;
+  color: var(--pj-ink);
+}
+
+.pj-x-hot__heat {
+  font-size: var(--pj-text-xs);
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  color: var(--pj-ink-muted);
+}
+
+.pj-x-hot__link:hover .pj-x-hot__link-title {
+  text-decoration: underline;
+}

@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--pj-font-body);
+  font-size: var(--pj-text-base);
+  line-height: 1.65;
+  color: var(--pj-ink-soft);
+  background: var(--pj-paper);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: rgba(42, 38, 34, 0.35);
+  text-underline-offset: 0.2em;
+  transition: color var(--pj-duration) var(--pj-ease-out),
+    text-decoration-color var(--pj-duration) var(--pj-ease-out);
+}
+
+a:hover {
+  color: var(--pj-ink);
+  text-decoration-color: var(--pj-ink);
+}
+
+button {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--pj-ink-soft);
+  outline-offset: 3px;
+}
+
+.pj-skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  padding: var(--pj-space-sm) var(--pj-space-md);
+  background: var(--pj-ink);
+  color: var(--pj-paper);
+  z-index: 9999;
+}
+
+.pj-skip-link:focus {
+  left: var(--pj-space-md);
+}

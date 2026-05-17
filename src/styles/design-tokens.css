@@ -1,0 +1,88 @@
+/**
+ * PixelJournal design tokens — warm editorial, pastel, human-crafted.
+ * Single source of truth for colors, type scale, motion, and depth.
+ */
+
+:root {
+  /* Warm paper & ink */
+  --pj-paper: #fffbf7;
+  --pj-paper-2: #fff5ec;
+  --pj-ink: #2a2622;
+  --pj-ink-soft: #5c544c;
+  --pj-ink-muted: #8a8178;
+
+  /* Pastel accents (category & highlights) */
+  --pj-blush: #ffd6e8;
+  --pj-peach: #ffd4bc;
+  --pj-mint: #c8f3e1;
+  --pj-sky: #c9e7ff;
+  --pj-lavender: #e4d9ff;
+  --pj-butter: #fff3b8;
+
+  /* Category identities — stronger color storytelling */
+  --pj-cat-travel: #5eb3f0;
+  --pj-cat-gaming: #8f7ae8;
+  --pj-cat-cooking: #f29d52;
+  --pj-cat-art: #f2a494;
+  --pj-cat-tech: #45c4ba;
+  --pj-cat-lifestyle: #ebe4d8;
+  --pj-cat-photo: #7ec8e3;
+  --pj-cat-business: #b8a9e8;
+  --pj-cat-media: #7dd3c0;
+  --pj-cat-productivity: #e8cf6e;
+
+  /* Blogger-inspired soft layered gradients */
+    --pj-gradient-dawn: linear-gradient(135deg,
+        #fff7f1 0%,
+        #ffe2d1 40%,
+        #ffd6cc 100%);
+  
+    --pj-gradient-hero: linear-gradient(145deg,
+        #fff4eb 0%,
+        #ffd9c8 45%,
+        #ffcdb2 100%);
+  
+    --pj-gradient-footer: linear-gradient(180deg,
+        #f6efe8 0%,
+        #eadfd6 100%);
+
+  /* Structural */
+  --pj-border: rgba(42, 38, 34, 0.08);
+  --pj-border-strong: rgba(42, 38, 34, 0.14);
+  --pj-shadow-soft: 0 24px 48px -28px rgba(42, 38, 34, 0.18);
+  --pj-shadow-lift: 0 18px 40px -22px rgba(58, 48, 42, 0.22);
+  --pj-depth-card: 1px 2px 0 rgba(255, 255, 255, 0.65) inset;
+
+  /* Typography */
+  --pj-font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --pj-font-body: 'DM Sans', system-ui, sans-serif;
+  --pj-font-ui: 'DM Sans', system-ui, sans-serif;
+
+  --pj-text-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.8125rem);
+  --pj-text-sm: clamp(0.875rem, 0.82rem + 0.25vw, 0.9375rem);
+  --pj-text-base: clamp(1rem, 0.94rem + 0.3vw, 1.0625rem);
+  --pj-text-lg: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
+  --pj-text-xl: clamp(1.35rem, 1.15rem + 0.8vw, 1.65rem);
+  --pj-text-display: clamp(2.5rem, 1.8rem + 3vw, 4rem);
+  --pj-text-hero: clamp(3rem, 2.2rem + 3.8vw, 5.25rem);
+
+  /* Layout */
+  --pj-space-xs: 0.25rem;
+  --pj-space-sm: 0.5rem;
+  --pj-space-md: 1rem;
+  --pj-space-lg: 1.75rem;
+  --pj-space-xl: 2.75rem;
+  --pj-space-2xl: 4.5rem;
+  --pj-space-3xl: 7rem;
+  --pj-max: 72rem;
+  --pj-radius-sm: 6px;
+  --pj-radius-md: 14px;
+  --pj-radius-lg: 22px;
+
+  /* Motion (subtle, editorial) */
+  --pj-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --pj-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --pj-duration: 0.55s;
+
+  color-scheme: only light;
+}

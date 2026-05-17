@@ -1,0 +1,106 @@
+.pj-x-rec {
+  margin-bottom: var(--pj-space-2xl);
+}
+
+.pj-x-rec__shell {
+  display: grid;
+  gap: var(--pj-space-xl);
+  align-items: start;
+  padding: var(--pj-space-xl);
+  border-radius: calc(var(--pj-radius-lg) + 8px);
+  border: 1px solid var(--pj-border);
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255, 214, 232, 0.35), transparent 42%),
+    radial-gradient(circle at 88% 12%, rgba(201, 231, 255, 0.38), transparent 46%),
+    linear-gradient(175deg, rgba(255, 255, 255, 0.94), rgba(255, 246, 238, 0.88));
+  box-shadow: var(--pj-shadow-soft);
+}
+
+@media (min-width: 960px) {
+  .pj-x-rec__shell {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: var(--pj-space-2xl);
+  }
+}
+
+.pj-x-rec__kicker {
+  margin: 0 0 var(--pj-space-sm);
+  font-size: var(--pj-text-xs);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--pj-ink-muted);
+}
+
+.pj-x-rec__title {
+  margin: 0 0 var(--pj-space-md);
+  font-family: var(--pj-font-display);
+  font-size: clamp(1.85rem, 1.5rem + 1.5vw, 2.75rem);
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+  color: var(--pj-ink);
+}
+
+.pj-x-rec__body {
+  margin: 0;
+  font-size: var(--pj-text-base);
+  color: var(--pj-ink-muted);
+  max-width: 34rem;
+}
+
+.pj-x-rec__deck {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pj-space-md);
+}
+
+.pj-x-rec__card {
+  border-radius: var(--pj-radius-lg);
+  border: 1px solid var(--pj-border);
+  background:
+    linear-gradient(165deg, rgba(255, 255, 255, 0.98), color-mix(in srgb, var(--pj-rc) 30%, white));
+  box-shadow: var(--pj-depth-card);
+}
+
+.pj-x-rec__link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: var(--pj-space-lg);
+  text-decoration: none;
+  color: inherit;
+}
+
+.pj-x-rec__cat {
+  font-size: var(--pj-text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--pj-ink-muted);
+}
+
+.pj-x-rec__card-title {
+  margin: 0;
+  font-family: var(--pj-font-display);
+  font-size: var(--pj-text-xl);
+  letter-spacing: -0.02em;
+  color: var(--pj-ink);
+}
+
+.pj-x-rec__ex {
+  margin: 0;
+  font-size: var(--pj-text-sm);
+  color: var(--pj-ink-muted);
+}
+
+.pj-x-rec__go {
+  margin-top: var(--pj-space-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: var(--pj-text-xs);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pj-ink-soft);
+}

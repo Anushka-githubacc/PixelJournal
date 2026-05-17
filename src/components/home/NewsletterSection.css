@@ -1,0 +1,130 @@
+
+.pj-news {
+  padding-block: var(--pj-space-2xl) var(--pj-space-3xl);
+  background: #f97316; /* burnt orange */
+  position: relative;
+  overflow: visible;
+  border-bottom: 6px solid #a3c9a8; /* sage green accent */
+}
+
+
+/* Removed glowing gradients for a cleaner, more editorial look */
+
+
+.pj-news__card {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: var(--pj-space-lg);
+  padding: var(--pj-space-xl);
+  border-radius: 24px;
+  border: 2px solid #a3c9a8;
+  background: #fff;
+  box-shadow: 0 4px 18px rgba(249,115,22,0.10);
+  overflow: hidden;
+}
+
+@media (min-width: 880px) {
+  .pj-news__card {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    align-items: end;
+  }
+}
+
+
+.pj-news__stamp {
+  position: absolute;
+  top: var(--pj-space-md);
+  right: var(--pj-space-md);
+  rotate: 8deg;
+  padding: 0.35rem 0.65rem;
+  border-radius: 10px;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #f97316;
+  background: #a3c9a8;
+}
+
+
+.pj-news__title {
+  margin: 0 0 var(--pj-space-sm);
+  font-family: var(--pj-font-display);
+  font-size: var(--pj-text-xl);
+  letter-spacing: -0.02em;
+  color: #f97316;
+}
+
+
+.pj-news__text {
+  margin: 0;
+  max-width: 34rem;
+  color: #5f5f5f;
+}
+
+.pj-news__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pj-space-sm);
+}
+
+@media (min-width: 520px) {
+  .pj-news__form {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.pj-news__field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+
+.pj-news__label {
+  font-size: var(--pj-text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 750;
+  color: #a3c9a8;
+}
+
+
+.pj-news__input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  border: 1.5px solid #a3c9a8;
+  background: #fffef6;
+  font-size: var(--pj-text-sm);
+  color: #f97316;
+}
+
+
+.pj-news__input::placeholder {
+  color: #a3c9a8;
+}
+
+
+.pj-news__submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.9rem 1.2rem;
+  border-radius: 12px;
+  border: 1.5px solid #a3c9a8;
+  background: #a3c9a8;
+  color: #f97316;
+  font-weight: 700;
+  font-size: var(--pj-text-sm);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.pj-news__submit:hover {
+  background: #f97316;
+  color: #fff;
+}

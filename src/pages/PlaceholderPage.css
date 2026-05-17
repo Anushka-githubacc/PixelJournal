@@ -1,0 +1,42 @@
+.pj-placeholder {
+  padding-block: var(--pj-space-3xl);
+}
+
+.pj-placeholder__inner {
+  text-align: left;
+}
+
+.pj-placeholder__eyebrow {
+  margin: 0 0 var(--pj-space-sm);
+  font-size: var(--pj-text-xs);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--pj-ink-muted);
+}
+
+.pj-placeholder__title {
+  margin: 0 0 var(--pj-space-md);
+  font-family: var(--pj-font-display);
+  font-size: var(--pj-text-display);
+  letter-spacing: -0.03em;
+  color: var(--pj-ink);
+}
+
+.pj-placeholder__subtitle {
+  margin: 0 0 var(--pj-space-lg);
+  color: var(--pj-ink-muted);
+  font-size: var(--pj-text-base);
+  max-width: 36rem;
+}
+
+.pj-placeholder__back {
+  display: inline-flex;
+  font-weight: 650;
+  color: var(--pj-ink);
+  text-decoration: none;
+}
+
+.pj-placeholder__back:hover {
+  text-decoration: underline;
+}
